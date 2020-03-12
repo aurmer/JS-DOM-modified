@@ -1,20 +1,245 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JS-DOM Exercises</title>
-
+  <title>JS-DOM Exercises</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>JS-DOM Exercises</h1>
-    <div style="display:flex;flex-direction:column">
-      <a href="ex1/index.html">Exercise 1</a>
-      <a href="ex2/index.html">Exercise 2</a>
-      <a href="ex3/index.html">Exercise 3</a>
-      <a href="ex4/index.html">Exercise 4</a>
-      <a href="ex5/index.html">Exercise 5</a>
-      <a href="ex6/index.html">Exercise 6</a>
-      <a href="ex7/index.html">Exercise 7</a>
-      <a href="ex8/index.html">Exercise 8</a>
+
+<div class="container">
+  <h1>JS DOM Exercises</h1>
+  <p>Click on an exercise tab, and follow the directions by adding code to each exercise.js file.</p>
+  <ul class="nav nav-tabs">
+    <li><a data-toggle="tab" href="#exercise1">Exercise 1</a></li>
+    <li><a data-toggle="tab" href="#exercise2">Exercise 2</a></li>
+    <li><a data-toggle="tab" href="#exercise3">Exercise 3</a></li>
+    <li><a data-toggle="tab" href="#exercise4">Exercise 4</a></li>
+    <li><a data-toggle="tab" href="#exercise5">Exercise 5</a></li>
+    <li><a data-toggle="tab" href="#exercise6">Exercise 6</a></li>
+    <li><a data-toggle="tab" href="#exercise7">Exercise 7</a></li>
+    <li><a data-toggle="tab" href="#exercise8">Exercise 8</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+
+    <div id="exercise1" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>Change the text of the h1 tag to "I have changed the text"</p>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;h1 id=&quot;title&quot;&gt;Change this text with Javascript&lt;/h1&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <h1 id="title">Change this text with Javascript</h1>
     </div>
+
+
+    <div id="exercise2" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>Change the background color of the box to blue</p>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;div id=&quot;red-box&quot;&gt;
+  Make this div blue using Javascript
+&lt;/div&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <div id="red-box">
+          Make this div blue using Javascript
+      </div>
+    </div>
+
+
+    <div id="exercise3" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>Make the box blue when you click the button.</p>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;button id=&quot;green-box-btn&quot;&gt;Click Me&lt;/button&gt;
+&lt;div id=&quot;green-box&quot;&gt;
+  Make this div blue when you click the button
+&lt;/div&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <button id="green-box-btn">Click Me</button>
+      <div id="green-box">
+          Make this div blue when you click the button
+      </div>
+    </div>
+
+
+    <div id="exercise4" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>
+        Make all of the boxes blue when you click the button<br>
+        Notice that all the boxes have "class" instead of "id"
+      </p>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;button id=&quot;purple-box-btn&quot;&gt;Click Me&lt;/button&gt;
+&lt;div class=&quot;purple-box&quot;&gt;
+  Make this div blue when you click the button
+&lt;/div&gt;
+&lt;div class=&quot;purple-box&quot;&gt;
+  Make this div blue when you click the button
+&lt;/div&gt;
+&lt;div class=&quot;purple-box&quot;&gt;
+  Make this div blue when you click the button
+&lt;/div&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <button id="purple-box-btn">Click Me</button>
+      <div class="purple-box">
+          Make this div blue when you click the button
+      </div>
+      <div class="purple-box">
+          Make this div blue when you click the button
+      </div>
+      <div class="purple-box">
+          Make this div blue when you click the button
+      </div>
+    </div>
+
+
+    <div id="exercise5" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>
+        Add a box to "boxContainer" everytime you click the button<br>
+        HINT: Look up createElement(), appendChild()<br>
+        HINT HINT: You can add the "purple-box" class to elements
+        like so: https://www.w3schools.com/howto/howto_js_add_class.asp
+      </p>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;button id=&quot;add-box-btn&quot;&gt;Click Me to add a box&lt;/button&gt;
+&lt;div id=&quot;boxContainer&quot;&gt;
+    &lt;div class=&quot;purple-box&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;purple-box&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <button id="add-box-btn">Click Me to add a box</button>
+      <div id="boxContainer">
+          <div class="purple-box"></div>
+          <div class="purple-box"></div>
+      </div>
+    </div>
+
+
+    <div id="exercise6" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>
+        Make the counter increment/decrement every time
+        you press the corresponding button.
+      </p>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;button id=&quot;increment-btn&quot;&gt;Increment&lt;/button&gt;
+&lt;button id=&quot;decrement-btn&quot;&gt;Decrement&lt;/button&gt;
+&lt;div id=&quot;counter&quot;&gt;0&lt;/div&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <button id="increment-btn">Increment</button>
+      <button id="decrement-btn">Decrement</button>
+      <div id="counter">0</div>
+    </div>
+
+
+    <div id="exercise7" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>
+        Make the section disappear and reappear whenever you click the section-header<br>
+        BONUS: Can you make the section slide up and down like this? :<br>
+        https://www.w3schools.com/bootstrap/bootstrap_collapse.asp
+      </p>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;div id=&quot;accordion&quot;&gt;
+  &lt;h3 id=&quot;section-header&quot;&gt;Section 1&lt;/h3&gt;
+  &lt;div id=&quot;section&quot;&gt;
+    &lt;p&gt;
+      Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+      ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+      amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+      odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <div id="accordion">
+        <h3 id="section-header">Section 1</h3>
+        <div id="section">
+          <p>
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="exercise8" class="tab-pane fade">
+      <h4>Assignment</h4>
+      <p>
+        Make a Todo List
+      </p>
+      <ol>
+        <li>
+          Make it so that after entering the task and clicking the<br>
+          "Add Task" button, that new task appears inside the todo-list.
+        </li>
+        <li>
+          Add the ability to check off tasks by clicking on them<br>
+          (text-decoration:strikethrough is a nice way to)
+        </li>
+      </ol>
+      <ul>
+        <li>
+          BONUS: Add a functioning "delete" button to each task<br>
+          (HINT: use the keyword "this" in your delete button's click listener!<br>
+          Console log "this" to see what value it holds)
+        </li>
+        <li>
+          SUPER BONUS: Make each task editable
+        </li>
+      </ul>
+      <h4>The HTML</h4>
+      <p>Reference the exercise HTML code in this box.</p>
+      <pre>&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;input id=&quot;description&quot; type=&quot;text&quot; name=&quot;description&quot;&gt;
+  &lt;button id=&quot;add-task-btn&quot;&gt;Add Task&lt;/button&gt;
+  &lt;ul id=&quot;todo-list&quot;&gt;
+    &lt;li&gt;Feed the cat&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+      <!-- Exercise-specific Elements -->
+      <div id="wrapper">
+        <input id="description" type="text" name="description">
+        <button id="add-task-btn">Add Task</button>
+        <ul id="todo-list">
+          <li>Feed the cat</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/exercise1.js"></script>
+<script src="js/exercise2.js"></script>
+<script src="js/exercise3.js"></script>
+<script src="js/exercise4.js"></script>
+<script src="js/exercise5.js"></script>
+<script src="js/exercise6.js"></script>
+<script src="js/exercise7.js"></script>
+<script src="js/exercise8.js"></script>
 </body>
 </html>
