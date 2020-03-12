@@ -1,0 +1,56 @@
+#exercise-list>li {
+  line-height: 1.5em;
+}
+
+.tab-content {
+  margin: 10px
+}
+
+#red-box,#green-box,.purple-box {
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#red-box {
+  background-color: red;
+}
+
+#green-box {
+  background-color: green;
+}
+
+.purple-box {
+  background-color: purple;
+}
+
+button {
+  margin: 10px;
+}
+
+#section-header {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+#accordion {
+    width: 400px;
+    background-color: yellow;
+    margin: auto;
+}
+
+#section {
+    padding: 5px;
+}
+
+#wrapper {
+    max-width: 480px;
+    margin: auto;
+}
+
+#description, #search, #todo-list {
+    font-size: 1.5em;
+}
