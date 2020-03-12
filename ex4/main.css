@@ -3,4 +3,9 @@
     color: white;
     width: 200px;
     height: 100px;
+    margin: 10px;
+}
+
+button {
+  margin: 10px;
 }
