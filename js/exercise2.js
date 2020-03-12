@@ -1,1 +1,4 @@
-// Change the background color of the box to blue
+;(function () {
+  // Change the background color of the box to blue
+
+})()
